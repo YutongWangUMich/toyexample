@@ -15,5 +15,5 @@ plot_iris(x, y)
 Plot a scatter plot of the iris data set
 }
 \examples{
-plot_iris(1,2)
+plot_iris(3,4)
 }
