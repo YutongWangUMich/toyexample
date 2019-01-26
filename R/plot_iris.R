@@ -5,6 +5,8 @@
 #' @examples
 #' plot_iris(3,4)
 #' @import ggplot2
+#' @export
+
 
 plot_iris <- function(x,y) {
   x_name <- colnames(iris)[x]
