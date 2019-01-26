@@ -3,13 +3,13 @@
 #' @param x the column-id of x-dim
 #' @param y the column-id of y-dim
 #' @examples
-#' plot_iris(3,4)
-#' @importFrom ggplot2 ggplot geom_point aes_string aes
+#' plot_iris2(3,4)
 #' @export
 
 
-plot_iris <- function(x,y) {
+plot_iris2 <- function(x,y) {
   x_name <- colnames(iris)[x]
   y_name <- colnames(iris)[y]
-  ggplot(iris,aes_string(x_name,y_name)) + geom_point(aes(color=Species))
+  ggplot2::ggplot(iris,ggplot2::aes_string(x_name,y_name)) + ggplot2::geom_point(ggplot2::aes(color=Species))
 }
+
