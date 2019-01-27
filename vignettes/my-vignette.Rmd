@@ -1,0 +1,27 @@
+---
+title: "How to make a scatterplot from dataframe"
+author: "Yutong"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+Peak at the data
+```{r}
+head(iris)
+colnames(iris)
+library(toyexample)
+plot_df(df = iris,x = 1,y=2,color_use = 5)
+```
+
