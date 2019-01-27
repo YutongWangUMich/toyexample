@@ -10,8 +10,8 @@
 #' @export
 
 plot_df <- function(df,x,y,color_use){
-  x_name <- colnames(iris)[x]
-  y_name <- colnames(iris)[y]
-  color_name <- colnames(iris)[color_use]
+  x_name <- colnames(df)[x]
+  y_name <- colnames(df)[y]
+  color_name <- colnames(df)[color_use]
   ggplot(df,aes_string(x_name,y_name)) + geom_point(aes_string(color=color_name))
 }
